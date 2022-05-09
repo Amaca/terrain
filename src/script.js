@@ -46,11 +46,11 @@ guiBackground.add(parameters, 'animate').name('Animate');
  */
 const loadingManager = new THREE.LoadingManager()
 const textureLoader = new THREE.TextureLoader(loadingManager)
-const colorTexture = textureLoader.load('/textures/rock_06_diff_4k.jpg');
-const heightTexture = textureLoader.load('/textures/rock_06_bump_4k.jpg');
-const normalTexture = textureLoader.load('/textures/rock_06_nor_gl_4k.jpg');
-const ambientOcclusionTexture = textureLoader.load('/textures/rock_06_ao_4k.jpg');
-const roughnessTexture = textureLoader.load('/textures/rock_06_rough_4k.jpg');
+const colorTexture = textureLoader.load('./textures/rock_06_diff_4k.jpg');
+const heightTexture = textureLoader.load('./textures/rock_06_bump_4k.jpg');
+const normalTexture = textureLoader.load('./textures/rock_06_nor_gl_4k.jpg');
+const ambientOcclusionTexture = textureLoader.load('./textures/rock_06_ao_4k.jpg');
+const roughnessTexture = textureLoader.load('./textures/rock_06_rough_4k.jpg');
 
 colorTexture.generateMipmaps = false;
 colorTexture.minFilter = THREE.NearestFilter
